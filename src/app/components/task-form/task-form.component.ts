@@ -37,14 +37,15 @@ export class TaskFormComponent implements OnInit {
         hide: true,
         img: this.imgPre
       });
+
+      this.nuevo.title = '';
+      this.nuevo.description = '';
+      
     }else
     {
       alert('Por favor revisar los campos del formulario para poder guardar la data');
     }
 
-
-    this.nuevo.title = '';
-    this.nuevo.description = '';
 
     // console.table(this.taskService.getPosts()); 
   }
