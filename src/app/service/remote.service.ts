@@ -6,7 +6,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RemoteService {
 
-  _url = '/api/GNews';
+  // _url = '/api/GNews';
+  _url = 'https://localhost:5001/api/GNews';
   constructor(
     private http: HttpClient
   ) {

@@ -29,6 +29,7 @@ export class TaskListComponent implements OnInit {
     this.last = 10;
   }
 
+
   addPostsPage() {
     let limit = this.postsTotal.length;
     if(this.last < limit)

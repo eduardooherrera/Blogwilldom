@@ -1,6 +1,6 @@
-<div infiniteScroll
-[infiniteScrollDistance]="2"
-[infiniteScrollThrottle]="500"
+<div  infiniteScroll 
+[infiniteScrollDistance]="0.5"
+[infiniteScrollThrottle]="200"
 (scrolled)="onScrollDown()" >
 <app-task *ngFor="let post of posts" [post]="post">
 
