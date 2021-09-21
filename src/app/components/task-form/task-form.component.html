@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-body">
+        <form (ngSubmit)="addTask()">
+            <div class="form-group pb-2">
+                <input type="text" class="form-control" placeholder="Title" #title name="title" [(ngModel)]="nuevo.title">
+            </div>
+            <div class="form-group pb-2">
+                <textarea id="" class="form-control" cols="30" rows="10" placeholder="Description"  name="description" [(ngModel)]="nuevo.description"></textarea>
+            </div>
+            <div class="form-group pb-2">
+                <input type="file" id="imageBlog" name="imageBlog" #imageBlog (change)="guardarImagen(imageBlog)" >
+            </div>
+                <button class="btn btn-primary w-100" type="submit"  (click)="title.focus()">Enviar</button>
+        </form>
+    </div>
+</div>

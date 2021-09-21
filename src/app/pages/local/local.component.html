@@ -1,0 +1,17 @@
+<div class="container p-4">
+  <div class="row">
+    <!-- <div class="col-md-5 text-center">
+      <app-task-form></app-task-form> 
+    </div> -->
+    <div class="col-md-12 text-center">
+     <button class="btn btn-primary mb-3" type="button" (click)="this.add = !this.add" *ngIf="!this.add">Agregar Post</button>
+
+     <app-task-list *ngIf="!this.add"></app-task-list>
+
+     <button class="btn btn-primary mb-3" type="button" (click)="this.add = !this.add" *ngIf="this.add">Volver</button>
+
+     <app-task-form *ngIf="this.add"></app-task-form>
+
+    </div>
+  </div>
+</div>
